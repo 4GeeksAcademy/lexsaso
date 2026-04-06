@@ -1,4 +1,13 @@
-/* Configuración General */
+/* Variables para colores modernos */
+:root {
+    --primario: #1e272e;
+    --detalles: #00d8d6;
+    --texto: #485460;
+    --fondo-gris: #f1f2f6;
+    --blanco: #ffffff;
+}
+
+/* Reseteo básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,80 +15,113 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--texto);
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
 }
 
 /* Navegación */
 header {
-    background: #fff;
+    background: var(--blanco);
     padding: 1rem 5%;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 100;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-nav ul {
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+.logo span {
+    color: var(--detalles);
+}
+
+header ul {
     display: flex;
     list-style: none;
+    gap: 20px;
 }
 
-nav ul li a {
+header ul li a {
     text-decoration: none;
-    color: #333;
-    margin-left: 20px;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: var(--primario);
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ff4757;
+header ul li a:hover {
+    color: var(--detalles);
 }
 
-/* Hero Section */
+/* Sección Hero con animación suave */
 .hero {
-    height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600');
+    background: linear-gradient(rgba(30, 39, 46, 0.8), rgba(30, 39, 46, 0.8)), 
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200');
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    color: var(--blanco);
     text-align: center;
+    padding: 100px 5%;
+    animation: fadeIn 1.5s ease-in;
 }
 
-/* Galería Grid */
-.grid-galeria {
+.btn-cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: var(--detalles);
+    color: var(--primario);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+}
+
+/* Grilla de Habilidades */
+.container {
+    padding: 80px 10%;
+}
+
+.grid-lenguajes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px 5%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.obra {
-    background: white;
-    padding: 15px;
+.card {
+    background: var(--blanco);
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-bottom: 4px solid var(--detalles);
 }
 
-.obra:hover {
-    transform: translateY(-10px);
+.bg-alt {
+    background-color: var(--fondo-gris);
 }
 
-.obra img {
-    width: 100%;
-    border-radius: 4px;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: var(--primario);
+    color: var(--blanco);
+}
+
+/* Animación Extra Opcional */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

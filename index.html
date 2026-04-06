@@ -3,54 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre del Artista | Portafolio Oficial</title>
+    
+    <title>Jhon Alexander Sandoval | Estudiante de Programación</title>
+    <meta name="description" content="Portafolio profesional de Jhon Alexander Sandoval, estudiante de programación con dominio en HTML, CSS, JavaScript y Python.">
+    <meta name="keywords" content="Jhon Alexander Sandoval, Programador, Desarrollo Web, HTML, CSS, JavaScript, Portafolio">
+    <meta name="author" content="Jhon Alexander Sandoval">
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="styles.css">
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Nombre del Artista",
-      "jobTitle": "Artista Visual",
-      "description": "Portafolio de obras de arte contemporáneo.",
-      "url": "https://tudominio.com"
+      "name": "Jhon Alexander Sandoval",
+      "jobTitle": "Estudiante de Programación",
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "Python", "Git"],
+      "description": "Desarrollador en formación enfocado en la creación de interfaces web modernas y accesibles.",
+      "url": "https://github.com/4GeeksAcademy/html-hello"
     }
     </script>
 </head>
 <body>
 
     <header>
-        <nav aria-label="Menú principal">
-            <div class="logo">Artista<span>Talento</span></div>
+        <nav aria-label="Menú principal de navegación">
+            <div class="logo">Jhon<span>Alexander</span></div>
             <ul>
-                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio" class="hero" aria-labelledby="hero-title">
-            <h1 id="hero-title">Explorando el color y la forma</h1>
-            <p>Una colección exclusiva de obras originales.</p>
-            <a href="#galeria" class="btn">Ver Obras</a>
+        <section id="inicio" class="hero" aria-labelledby="titulo-hero">
+            <div class="hero-content">
+                <h1 id="titulo-hero">Jhon Alexander Sandoval</h1>
+                <p>Estudiante de programación apasionado por el código limpio y el diseño funcional.</p>
+                <a href="#proyectos" class="btn-cta">Ver mis avances</a>
+            </div>
         </section>
 
-        <section id="galeria" aria-labelledby="galeria-title">
-            <h2 id="galeria-title">Galería de Obras</h2>
-            <div class="grid-galeria">
-                <article class="obra" itemscope itemtype="https://schema.org/VisualArtwork">
-                    <img src="https://via.placeholder.com/400" alt="Descripción de la Obra 1" itemprop="image">
-                    <h3 itemprop="name">Título de la Obra 1</h3>
-                    <p itemprop="abstract">Óleo sobre lienzo, 2023.</p>
+        <section id="habilidades" class="container" aria-labelledby="titulo-habilidades">
+            <h2 id="titulo-habilidades">Lenguajes que manejo</h2>
+            <div class="grid-lenguajes">
+                <article class="card">
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Maquetación semántica y diseño moderno con Flexbox y Grid.</p>
                 </article>
-                </div>
+                <article class="card">
+                    <h3>JavaScript</h3>
+                    <p>Lógica de programación y manipulación del DOM.</p>
+                </article>
+                <article class="card">
+                    <h3>Python</h3>
+                    <p>Fundamentos de programación y automatización de tareas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="container bg-alt" aria-labelledby="titulo-sobre-mi">
+            <div class="bio-content">
+                <h2 id="titulo-sobre-mi">Mi camino en la programación</h2>
+                <p>Soy <strong>Jhon Alexander Sandoval</strong>. Actualmente me encuentro estudiando programación con el objetivo de convertir ideas en realidades digitales. Mi enfoque actual es dominar las tecnologías web para crear sitios altamente optimizados y accesibles para todos.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Nombre del Artista. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Jhon Alexander Sandoval | Proyecto para 4Geeks Academy</p>
     </footer>
 
 </body>
