@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del Artista | Portafolio Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nombre del Artista",
+      "jobTitle": "Artista Visual",
+      "description": "Portafolio de obras de arte contemporáneo.",
+      "url": "https://tudominio.com"
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Menú principal">
+            <div class="logo">Artista<span>Talento</span></div>
+            <ul>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Explorando el color y la forma</h1>
+            <p>Una colección exclusiva de obras originales.</p>
+            <a href="#galeria" class="btn">Ver Obras</a>
+        </section>
+
+        <section id="galeria" aria-labelledby="galeria-title">
+            <h2 id="galeria-title">Galería de Obras</h2>
+            <div class="grid-galeria">
+                <article class="obra" itemscope itemtype="https://schema.org/VisualArtwork">
+                    <img src="https://via.placeholder.com/400" alt="Descripción de la Obra 1" itemprop="image">
+                    <h3 itemprop="name">Título de la Obra 1</h3>
+                    <p itemprop="abstract">Óleo sobre lienzo, 2023.</p>
+                </article>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nombre del Artista. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
